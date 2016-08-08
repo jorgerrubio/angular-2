@@ -1,4 +1,4 @@
-System.register(["angular2/core", "../../pipes/joinpipe", "../../pipes/h1pipe"], function(exports_1, context_1) {
+System.register(["angular2/core"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,37 +10,30 @@ System.register(["angular2/core", "../../pipes/joinpipe", "../../pipes/h1pipe"],
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, joinpipe_1, h1pipe_1;
-    var HomePage;
+    var core_1;
+    var H1Pipe;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (joinpipe_1_1) {
-                joinpipe_1 = joinpipe_1_1;
-            },
-            function (h1pipe_1_1) {
-                h1pipe_1 = h1pipe_1_1;
             }],
         execute: function() {
-            HomePage = (function () {
-                function HomePage() {
-                    this.h1text = "Hola mundo";
-                    this.colors = ['rojo', 'amarillo', 'azul', 'naranja', 'verde', 'blanco'];
+            H1Pipe = (function () {
+                function H1Pipe() {
                 }
-                HomePage = __decorate([
-                    core_1.Component({
-                        selector: "my-app",
-                        templateUrl: 'app/components/home/home.html',
-                        pipes: [joinpipe_1.JoinPipe, h1pipe_1.H1Pipe]
+                H1Pipe.prototype.transform = function (value, args) {
+                    return "<h1>" + value + "</h1>";
+                };
+                H1Pipe = __decorate([
+                    core_1.Pipe({
+                        name: "pipeh1"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HomePage);
-                return HomePage;
+                ], H1Pipe);
+                return H1Pipe;
             }());
-            exports_1("HomePage", HomePage);
+            exports_1("H1Pipe", H1Pipe);
         }
     }
 });
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=h1pipe.js.map
