@@ -1,4 +1,4 @@
-System.register(["angular2/core"], function(exports_1, context_1) {
+System.register(["angular2/core", "../../directives/underline"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,37 +10,33 @@ System.register(["angular2/core"], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var AppComponent;
+    var core_1, underline_1;
+    var HomePage;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (underline_1_1) {
+                underline_1 = underline_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            HomePage = (function () {
+                function HomePage() {
                     this.holaMundo = 'Hola Mundo';
-                    this.texto1 = 'Parrafo 1';
-                    this.texto2 = 'Parrafo 2';
                 }
-                AppComponent = __decorate([
+                HomePage = __decorate([
                     core_1.Component({
                         selector: "my-app",
-                        // template: "<h1>Hola Mundo</h1>" // una sola linea
-                        // multilinea
-                        /*template: `<h1>Hola Mundo</h1>
-                        <p>texto 1</p>
-                        <p>texto 2</p>
-                        <p>texto 3</p>`*/
-                        templateUrl: 'app/components/app.html'
+                        templateUrl: 'app/components/home/home.html',
+                        directives: [underline_1.Underline]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], HomePage);
+                return HomePage;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("HomePage", HomePage);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=home.js.map
