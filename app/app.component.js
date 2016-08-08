@@ -26,7 +26,11 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                         selector: "my-app",
                         // template: "<h1>Hola Mundo</h1>" // una sola linea
                         // multilinea
-                        template: "<h1>Hola Mundo</h1>\n    <p>texto 1</p>\n    <p>texto 2</p>\n    <p>texto 3</p>"
+                        /*template: `<h1>Hola Mundo</h1>
+                        <p>texto 1</p>
+                        <p>texto 2</p>
+                        <p>texto 3</p>`*/
+                        templateUrl: 'app/app.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
