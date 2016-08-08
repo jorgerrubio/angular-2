@@ -2,7 +2,13 @@ import {Component} from "angular2/core";
 
 @Component({
     selector: "my-app",
-    template: "<h1>Hola Mundo</h1>"
+    // template: "<h1>Hola Mundo</h1>" // una sola linea
+    // multilinea
+    template: `<h1>Hola Mundo</h1>
+    <p>texto 1</p>
+    <p>texto 2</p>
+    <p>texto 3</p>`
+
 })
 
 export class AppComponent {
