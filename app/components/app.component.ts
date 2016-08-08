@@ -8,7 +8,7 @@ import {Component} from "angular2/core";
     <p>texto 1</p>
     <p>texto 2</p>
     <p>texto 3</p>`*/
-    templateUrl: 'app/app.html'
+    templateUrl: 'app/components/app.html'
 
 })
 

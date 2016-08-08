@@ -33,7 +33,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                         <p>texto 1</p>
                         <p>texto 2</p>
                         <p>texto 3</p>`*/
-                        templateUrl: 'app/app.html'
+                        templateUrl: 'app/components/app.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
