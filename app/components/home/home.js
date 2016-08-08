@@ -1,4 +1,4 @@
-System.register(["angular2/core", "../../directives/underline"], function(exports_1, context_1) {
+System.register(["angular2/core", "../../directives/event"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(["angular2/core", "../../directives/underline"], function(export
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, underline_1;
+    var core_1, event_1;
     var HomePage;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (underline_1_1) {
-                underline_1 = underline_1_1;
+            function (event_1_1) {
+                event_1 = event_1_1;
             }],
         execute: function() {
             HomePage = (function () {
@@ -29,7 +29,7 @@ System.register(["angular2/core", "../../directives/underline"], function(export
                     core_1.Component({
                         selector: "my-app",
                         templateUrl: 'app/components/home/home.html',
-                        directives: [underline_1.Underline]
+                        directives: [event_1.EventsDir]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HomePage);

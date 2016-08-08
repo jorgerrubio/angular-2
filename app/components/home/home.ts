@@ -1,10 +1,10 @@
 import {Component} from "angular2/core";
-import {Underline} from "../../directives/underline";
+import {EventsDir} from "../../directives/event";
 
 @Component({
     selector: "my-app",
     templateUrl: 'app/components/home/home.html',
-    directives: [Underline]
+    directives: [EventsDir]
 
 })
 
