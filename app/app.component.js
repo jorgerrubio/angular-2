@@ -20,6 +20,9 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.holaMundo = 'Hola Mundo';
+                    this.texto1 = 'Parrafo 1';
+                    this.texto2 = 'Parrafo 2';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
